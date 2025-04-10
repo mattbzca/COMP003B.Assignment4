@@ -5,6 +5,8 @@
  * Purpose: This is my ASP.NET Core Mini-Project demonstrating all MVC concepts from Modules 1 to 4.
  */
 
+using COMP003B.Assignment4.Middleware;
+
 namespace COMP003B.Assignment4
 {
     public class Program
@@ -28,6 +30,8 @@ namespace COMP003B.Assignment4
 
             app.UseHttpsRedirection();
             app.UseStaticFiles();
+
+            app.UseMiddleware<COMP003B.Assignment4.Middleware.RequestLoggingMiddleware>();
 
             app.UseRouting();
 
