@@ -2,7 +2,7 @@
 
 namespace COMP003B.Assignment4.Models
 {
-    public class Trail
+    public class Article
     {
         public int Id { get; set; }
 
