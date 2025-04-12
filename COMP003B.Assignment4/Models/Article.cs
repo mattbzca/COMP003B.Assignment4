@@ -13,5 +13,8 @@ namespace COMP003B.Assignment4.Models
         [Required]
         [StringLength(300)]
         public string Summary { get; set; }
+
+        [Required]
+        public string Image { get; set; }
     }
 }

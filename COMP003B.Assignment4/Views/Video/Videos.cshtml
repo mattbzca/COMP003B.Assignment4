@@ -1,0 +1,12 @@
+﻿@model IEnumerable<Video>
+
+@{
+	ViewData["Title"] = "Yosemite Valley Day Hikes";
+	Layout = "_Layout";
+}
+
+<h2>Yosemite Valley Day Hikes</h2>
+@foreach (var video in Model)
+{
+	<partial name="_HikingVideos" model="video" />
+}

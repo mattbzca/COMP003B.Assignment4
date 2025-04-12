@@ -1,10 +1,11 @@
-﻿@model Article
+﻿@model Video
 
 <div class="card mb-3">
-    <div class="card-body">
-        <!-- ex: image here, include song, id, title, desc, vid link -->
-        <h4 class="card-title">@Model.Title</h4>
-        <p class="card-text">@Model.Summary</p>
-        <a asp-action="Details" asp-route-id="@Model.Id" class="btn btn-outline-primary">Read More</a>
-    </div>
+        <div class="card-body">
+            <!-- ex: image here, include song, id, title, desc, vid link -->
+            <img src="@Model.Image" alt="Model.Title" />
+            <h4 class="card-title">@Model.Title</h4>
+            <p class="card-text">@Model.Summary</p>
+        <a href="@Model.Url" class="btn btn-outline-primary">Watch Video</a>
+        </div>
 </div>
